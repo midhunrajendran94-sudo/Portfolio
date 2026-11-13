@@ -1,0 +1,129 @@
+.contact {
+  background:
+    radial-gradient(ellipse at 15% 0%, rgba(41, 57, 87, 0.55), transparent 42%),
+    radial-gradient(ellipse at 90% 90%, rgba(85, 75, 117, 0.32), transparent 40%),
+    linear-gradient(165deg, #101827, #1a2740 55%, #1d2433);
+}
+
+.orb-contact {
+  width: 340px;
+  height: 340px;
+  right: -40px;
+  top: 10%;
+  background: rgba(85, 75, 117, 0.28);
+}
+
+.contact-layout {
+  display: grid;
+  grid-template-columns: 0.86fr 1.14fr;
+  gap: 1.25rem;
+  align-items: start;
+}
+
+.contact-cards {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.info-card {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  padding: 0.95rem 1rem;
+  border-radius: 18px;
+  background: rgba(16, 24, 39, 0.4);
+  border: 1px solid var(--line);
+  transition: transform 0.3s var(--ease), border-color 0.3s var(--ease);
+}
+
+a.info-card:hover {
+  transform: translateY(-3px);
+  border-color: rgba(143, 176, 173, 0.45);
+}
+
+.info-label,
+.info-value { display: block; }
+
+.info-label {
+  color: var(--grey);
+  font-size: 0.78rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.info-value {
+  overflow-wrap: anywhere;
+  color: var(--white);
+}
+
+.contact-form {
+  display: grid;
+  gap: 0.9rem;
+  padding: 1.35rem;
+  border-radius: 24px;
+  background: rgba(21, 29, 43, 0.72);
+  border: 1px solid var(--line);
+  box-shadow: var(--shadow);
+}
+
+.form-note {
+  color: var(--grey);
+  font-size: 0.95rem;
+}
+
+.contact-form label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  color: #c5cad4;
+  font-size: 0.92rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 0.85rem 0.9rem;
+  border: 1px solid rgba(242, 243, 247, 0.12);
+  border-radius: 14px;
+  background: rgba(16, 24, 39, 0.62);
+  color: var(--white);
+}
+
+.contact-form textarea {
+  min-height: 140px;
+  resize: vertical;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: rgba(143, 176, 173, 0.7);
+  outline: none;
+}
+
+.contact-form .btn { justify-self: start; }
+
+.form-success {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.65rem;
+  padding: 0.85rem 1rem;
+  border-radius: 12px;
+  background: rgba(66, 107, 112, 0.22);
+  border: 1px solid rgba(143, 176, 173, 0.5);
+  color: #d7ebe8;
+  font-size: 0.92rem;
+  line-height: 1.5;
+}
+
+.form-success svg {
+  flex-shrink: 0;
+  margin-top: 2px;
+  color: #8fb0ad;
+}
+
+.form-success a {
+  text-decoration: underline;
+  color: #ffffff;
+}
+
+::placeholder { color: rgba(166, 173, 187, 0.8); }

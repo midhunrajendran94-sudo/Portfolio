@@ -1,0 +1,97 @@
+.skills {
+  background:
+    radial-gradient(ellipse at 8% 0%, rgba(66, 107, 112, 0.28), transparent 46%),
+    radial-gradient(ellipse at 100% 100%, rgba(41, 57, 87, 0.45), transparent 42%),
+    var(--charcoal);
+}
+
+.bento {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.span-2 { grid-column: span 2; }
+.span-3 { grid-column: span 3; }
+.span-4 { grid-column: span 4; }
+.span-6 { grid-column: span 6; }
+
+.skill-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+  padding: 1.25rem;
+  border-radius: 22px;
+  background: rgba(16, 24, 39, 0.45);
+  border: 1px solid var(--line);
+  transition: transform 0.3s var(--ease), border-color 0.3s var(--ease);
+}
+
+.skill-card.feature {
+  min-height: 250px;
+  background:
+    linear-gradient(#171f2e, #171f2e) padding-box,
+    linear-gradient(155deg, rgba(242, 243, 247, 0.32), rgba(41, 57, 87, 0.2) 40%, rgba(66, 107, 112, 0.75)) border-box;
+  border: 1px solid transparent;
+}
+
+.skill-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(143, 176, 173, 0.4);
+}
+
+.skill-card h3 {
+  font-family: var(--serif);
+  font-size: 1.55rem;
+  font-weight: 500;
+  letter-spacing: -0.03em;
+  line-height: 1.15;
+}
+
+.skill-card.feature h3 { margin-top: auto; }
+
+.skill-items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+}
+
+.skill-items li,
+.learning-list li {
+  padding: 0.38rem 0.7rem;
+  border-radius: 999px;
+  background: rgba(242, 243, 247, 0.04);
+  border: 1px solid rgba(242, 243, 247, 0.08);
+  font-size: 0.92rem;
+}
+
+.learning-panel {
+  display: grid;
+  grid-template-columns: 0.85fr 1.15fr;
+  gap: 1.5rem;
+  align-items: center;
+  margin-top: 1rem;
+  padding: 1.4rem;
+  border-radius: 24px;
+  background:
+    linear-gradient(rgba(21, 29, 43, 0.88), rgba(21, 29, 43, 0.88)) padding-box,
+    linear-gradient(135deg, rgba(66, 107, 112, 0.85), rgba(85, 75, 117, 0.35) 55%, rgba(242, 243, 247, 0.2)) border-box;
+  border: 1px dashed transparent;
+}
+
+.learning-panel p:last-child {
+  margin-top: 0.55rem;
+  color: var(--grey);
+}
+
+.learning-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+}
+
+.learning-list li {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+}

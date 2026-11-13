@@ -1,0 +1,54 @@
+.training { background: var(--charcoal); }
+
+.training-grid {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.training-card { grid-column: span 2; }
+
+.training-card:first-child,
+.training-card:nth-child(2) { grid-column: span 3; }
+
+.training-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+  min-height: 210px;
+  padding: 1.25rem;
+  border-radius: 22px;
+  background:
+    linear-gradient(180deg, rgba(242, 243, 247, 0.035), transparent 42%),
+    rgba(16, 24, 39, 0.48);
+  border: 1px solid var(--line);
+  transition: transform 0.3s var(--ease), border-color 0.3s var(--ease);
+}
+
+.training-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(143, 176, 173, 0.4);
+}
+
+.training-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.training-year {
+  color: #9eb0b4;
+  font-family: var(--serif);
+  font-size: 1.35rem;
+  letter-spacing: -0.03em;
+}
+
+.training-card h3 {
+  font-family: var(--serif);
+  font-size: 1.4rem;
+  font-weight: 500;
+  letter-spacing: -0.03em;
+  line-height: 1.2;
+}
+
+.training-card p { color: var(--grey); }

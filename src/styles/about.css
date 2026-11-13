@@ -1,0 +1,99 @@
+.about {
+  background:
+    radial-gradient(ellipse at 100% 0%, rgba(85, 75, 117, 0.22), transparent 42%),
+    var(--charcoal);
+}
+
+.orb-soft {
+  width: 320px;
+  height: 320px;
+  top: -40px;
+  right: -60px;
+  background: rgba(85, 75, 117, 0.32);
+}
+
+.about-layout {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 2.5rem;
+  align-items: start;
+}
+
+.about-copy { color: var(--text); }
+
+.about-copy p + p { margin-top: 1rem; }
+
+.about-copy p:first-of-type {
+  color: var(--white);
+  font-size: 1.22rem;
+  line-height: 1.55;
+}
+
+.about-side {
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+}
+
+.objective-card {
+  padding: 1.45rem 1.35rem 1.35rem;
+  border-radius: 22px;
+  background:
+    linear-gradient(rgba(21, 29, 43, 0.2), rgba(21, 29, 43, 0.2)) padding-box,
+    linear-gradient(155deg, rgba(242, 243, 247, 0.32), rgba(85, 75, 117, 0.18) 46%, rgba(66, 107, 112, 0.7)) border-box;
+  border: 1px solid transparent;
+  box-shadow: var(--shadow);
+}
+
+.objective-card .kicker { margin-bottom: 0.9rem; }
+
+.objective-card p:last-child {
+  font-family: var(--serif);
+  font-size: clamp(1.35rem, 2vw, 1.7rem);
+  line-height: 1.35;
+  letter-spacing: -0.025em;
+}
+
+.interest-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.9rem;
+}
+
+.interest-list li {
+  padding: 0.4rem 0.75rem;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: rgba(242, 243, 247, 0.03);
+  font-size: 0.92rem;
+}
+
+.strengths { margin-top: 3.4rem; }
+
+.strength-grid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 0.85rem;
+}
+
+.strength-card {
+  min-height: 148px;
+  padding: 1.1rem 1rem 1rem;
+  border-radius: 20px;
+  background: rgba(16, 24, 39, 0.35);
+  border: 1px solid var(--line);
+  transition: transform 0.3s var(--ease), border-color 0.3s var(--ease);
+}
+
+.strength-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(143, 176, 173, 0.45);
+}
+
+.strength-card h4 {
+  margin-top: 1.1rem;
+  font-size: 1.02rem;
+  font-weight: 500;
+  line-height: 1.35;
+}

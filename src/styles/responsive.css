@@ -1,0 +1,100 @@
+@media (max-width: 1040px) {
+  .hero-layout,
+  .about-layout,
+  .contact-layout,
+  .learning-panel,
+  .project-card,
+  .project-card:nth-child(even) {
+    grid-template-columns: 1fr;
+  }
+
+  .project-card:nth-child(even) .project-visual { order: 0; }
+
+  .hero-visual {
+    grid-template-columns: 1fr;
+    justify-content: stretch;
+    max-width: 640px;
+  }
+
+  .portrait-wrap {
+    grid-column: 1;
+    grid-row: 1;
+    width: min(100%, 380px);
+    margin-inline: auto;
+  }
+
+  .float-list {
+    grid-column: 1;
+    grid-row: 2;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 0.4rem;
+  }
+
+  .float-card:nth-child(odd),
+  .float-card:nth-child(even) { animation: none; }
+
+  .strength-grid,
+  .bento,
+  .training-grid { grid-template-columns: 1fr 1fr; }
+
+  .span-2,
+  .span-3,
+  .span-4,
+  .span-6,
+  .training-card,
+  .training-card:first-child,
+  .training-card:nth-child(2) { grid-column: auto; }
+
+  .skill-card.feature { min-height: 0; }
+  .skill-card.feature h3 { margin-top: 0; }
+
+  .lang-grid { grid-template-columns: 1fr 1fr; }
+  .project-card { min-height: 0; }
+}
+
+@media (max-width: 860px) {
+  .desktop-nav { display: none; }
+  .nav-toggle { display: grid; }
+  .section { padding: 4.75rem 0; }
+  .hero { min-height: 0; padding-top: 2.4rem; }
+  .section-watermark { font-size: 4rem; }
+}
+
+@media (max-width: 640px) {
+  body { font-size: 16px; }
+  .container { width: min(1140px, calc(100% - 1.5rem)); }
+  .hero h1 { font-size: clamp(2.8rem, 15vw, 3.7rem); }
+  .hero-actions { flex-direction: column; align-items: stretch; }
+  .hero-actions .resume-control {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+  }
+  .hero-actions .btn { width: 100%; }
+  .resume-note { width: 100%; }
+  .float-list,
+  .strength-grid,
+  .bento,
+  .training-grid,
+  .lang-grid,
+  .footer-bar { grid-template-columns: 1fr; }
+  .float-list { display: grid; }
+  .footer-bar {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .section-watermark { display: none; }
+  .project-body { padding: 1.35rem 1.1rem 1.4rem; }
+  .timeline { padding-left: 1.7rem; }
+  .timeline-item::before { left: -1.5rem; }
+  .edu-card:hover { transform: none; }
+  .contact-form .btn { width: 100%; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .float-card,
+  .scroll-cue svg { animation: none; }
+}

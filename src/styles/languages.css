@@ -1,0 +1,46 @@
+.languages {
+  background:
+    linear-gradient(180deg, #101827, #141c2b);
+}
+
+.lang-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.lang-card {
+  display: flex;
+  align-items: center;
+  gap: 0.95rem;
+  min-height: 132px;
+  padding: 1.15rem;
+  border-radius: 22px;
+  background:
+    linear-gradient(#151d2b, #151d2b) padding-box,
+    linear-gradient(150deg, rgba(242, 243, 247, 0.2), rgba(85, 75, 117, 0.18) 50%, rgba(66, 107, 112, 0.55)) border-box;
+  border: 1px solid transparent;
+  transition: transform 0.3s var(--ease);
+}
+
+.lang-card:hover { transform: translateY(-4px); }
+
+.lang-mark {
+  display: grid;
+  place-items: center;
+  width: 3.3rem;
+  height: 3.3rem;
+  flex: none;
+  border-radius: 50%;
+  background: rgba(242, 243, 247, 0.04);
+  border: 1px solid var(--line);
+  font-family: "Nirmala UI", "Noto Sans Malayalam", "Noto Sans Devanagari", "Noto Sans Tamil", var(--serif);
+  font-size: 1.35rem;
+}
+
+.lang-card h3 {
+  font-size: 1.15rem;
+  font-weight: 500;
+}
+
+.lang-card p { color: var(--grey); }

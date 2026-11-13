@@ -1,0 +1,18 @@
+{
+  "name": "Midhun Rajendran | Aspiring QA Engineer",
+  "short_name": "Midhun QA",
+  "description": "Portfolio of Midhun Rajendran, aspiring QA Engineer focusing on Software Testing, Quality Assurance and Automation.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#101827",
+  "theme_color": "#101827",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
+
